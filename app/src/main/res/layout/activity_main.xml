@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/bg1"
+    tools:context=".MainActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:background="#FFFFFF"
+        android:alpha="0.5">
+        <com.example.admin.tabhost1.views.MyView
+            android:id="@+id/tab_plans"
+            android:background="@drawable/footer_tab"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:paddingLeft="25dp"
+            android:paddingBottom="25dp"
+            app:drawable="@drawable/btn_plans_1"/>
+        <com.example.admin.tabhost1.views.MyView
+            android:id="@+id/tab_data"
+            android:background="@drawable/footer_tab"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:paddingLeft="25dp"
+            android:paddingBottom="25dp"
+            app:drawable="@drawable/btn_data_1"/>
+        <com.example.admin.tabhost1.views.MyView
+            android:background="@drawable/footer_tab"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:paddingBottom="1dp"
+            app:drawable="@drawable/btn_createnew"/>
+        <com.example.admin.tabhost1.views.MyView
+            android:id="@+id/tab_contacts"
+            android:background="@drawable/tab_selector"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:paddingLeft="25dp"
+            android:paddingBottom="25dp"
+            app:drawable="@drawable/btn_contact_1"/>
+        <com.example.admin.tabhost1.views.MyView
+            android:id="@+id/tab_setting"
+            android:background="@drawable/footer_tab"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:paddingLeft="25dp"
+            android:paddingBottom="25dp"
+            app:drawable="@drawable/btn_set_1"/>
+
+    </LinearLayout>
+
+</LinearLayout>
